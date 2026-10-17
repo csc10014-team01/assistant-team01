@@ -31,6 +31,7 @@ pip install -e .
 ```bash
 # Chạy truy vấn đơn lẻ:
 python -m assistant "where is the IT helpdesk?"
+Type `help` to see the list of supported commands.
 
 # Hoặc chạy chế độ tương tác (nhập 'quit' để thoát):
 python -m assistant

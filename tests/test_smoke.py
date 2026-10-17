@@ -1,8 +1,16 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+
 from assistant.rules import reply
 
 
 def test_greeting():
     assert "Hello" in reply("hi")
+
+
+def test_help():
+    assert "Available commands" in reply("help")
 
 
 def test_office_lookup():
